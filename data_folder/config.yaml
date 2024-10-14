@@ -2,40 +2,44 @@ remote: true
 
 experienceLevel:
   internship: false
-  entry: true
-  associate: true
+  entry: false
+  associate: false
   mid-senior level: true
-  director: false
-  executive: false
+  director: true
+  executive: true
 
 jobTypes:
   full-time: true
   contract: false
   part-time: false
-  temporary: true
+  temporary: false
   internship: false
   other: false
-  volunteer: true
+  volunteer: false
 
 date:
   all time: false
   month: false
-  week: false
+  week: true
   24 hours: true
 
 positions:
   - Software engineer
+  - Solution Architect
+  - Development Manager
 
 locations:
-  - Germany
+  - United States
 
 apply_once_at_company: true
 
 distance: 100
 
 company_blacklist:
-  - wayfair
-  - Crossover
+  - Eliassen Group
+  - Google
+  - Apple
+  - Adobe
 
 title_blacklist:
   - word1
@@ -45,6 +49,11 @@ job_applicants_threshold:
   min_applicants: 0
   max_applicants: 30
 
+### OpenAI
+# llm_model_type: openai
+# llm_model: 'gpt-4o-mini'
+
+### Groq
 llm_model_type: openai
-llm_model: 'gpt-4o-mini'
-# llm_api_url: https://api.pawan.krd/cosmosrp/v1'
+llm_model: 'llama3-70b-8192'
+llm_api_url: 'https://api.groq.com/openai/v1'
